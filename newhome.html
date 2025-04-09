@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home | 800 Club Capital</title>
+  <title>800 Club Capital | Start Here</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,7 +14,7 @@
     }
     header {
       background-color: #003366;
-      color: #fff;
+      color: white;
       padding: 2rem 1rem;
       text-align: center;
     }
@@ -30,19 +30,17 @@
       margin-bottom: 1rem;
     }
     .nav-links a {
-      color: #fff;
+      color: white;
       text-decoration: none;
       font-weight: 600;
-      font-size: 1rem;
-      transition: color 0.3s;
     }
     .nav-links a:hover {
-      color: #00c6d7;
+      text-decoration: underline;
     }
     .container {
       max-width: 1100px;
       margin: 2rem auto;
-      background: #ffffff;
+      background-color: #fff;
       padding: 2.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -54,7 +52,7 @@
     }
     p.lead {
       font-size: 1.2rem;
-      color: #ffffff;
+      color: #333;
       margin-bottom: 2.5rem;
     }
     .service-options {
@@ -68,13 +66,11 @@
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      width: 300px;
+      width: 320px;
       text-align: left;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .card h2 {
       font-size: 1.4rem;
@@ -84,9 +80,11 @@
     .card p {
       font-size: 1rem;
       margin-bottom: 1.5rem;
-      color: #ffffff;
+      color: #333;
     }
-    .card a {
+    .card a.button {
+      margin-top: auto;
+      text-align: center;
       display: inline-block;
       padding: 0.6rem 1.2rem;
       background-color: #003366;
@@ -96,7 +94,7 @@
       font-weight: bold;
       transition: background-color 0.3s;
     }
-    .card a:hover {
+    .card a.button:hover {
       background-color: #0055aa;
     }
     footer {
@@ -104,7 +102,7 @@
       padding: 2rem 1rem;
       background-color: #f1f1f1;
       font-size: 0.95rem;
-      color: #ffffff;
+      color: #555;
     }
     footer a {
       color: #003366;
@@ -135,17 +133,17 @@
       <div class="card">
         <h2>Become a Personal Guarantor</h2>
         <p>Have a 750+ credit score? Earn up to $10,000 by backing pre-vetted corporations and helping them secure business funding.</p>
-        <a href="pg-intake.html">Apply Now</a>
+        <a class="button" href="https://800clubcapital.com">Apply Now</a>
       </div>
       <div class="card">
         <h2>Need Business Funding?</h2>
         <p>Are you a C-Corp in need of capital? Get matched with a qualified PG to strengthen your business loan application.</p>
-        <a href="business-intake.html">Request Funding</a>
+        <a class="button" href="https://800clubcapital.com/corpintake.html">Request Funding</a>
       </div>
       <div class="card">
         <h2>Boost Your Credit Score</h2>
-        <p>Enhance your credit profile by joining seasoned credit tradelines as an Authorized User—no credit check required.</p>
-        <a href="au-intake.html">Get Started</a>
+        <p>Enhance your credit profile by joining seasoned credit tradelines as an Authorized User—no credit check required. Learn how it works and see if you qualify.</p>
+        <a class="button" href="creditbuilder-how-it-works.html">Get Started</a>
       </div>
     </div>
   </div>
