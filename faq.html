@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>All FAQs | 800 Club Capital</title>
+  <title>FAQs | 800 Club Capital</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -33,28 +33,37 @@
     .nav-links a:hover {
       text-decoration: underline;
     }
+    header img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      text-align: center;
+      color: #003366;
+      margin-top: 2rem;
+    }
     .container {
       max-width: 800px;
       margin: 2rem auto;
-      background: white;
-      padding: 2.5rem;
-      border-radius: 12px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       text-align: center;
     }
-    h1 {
-      color: #003366;
-      margin-bottom: 2rem;
-    }
-    .faq-links a {
+    .faq-link {
       display: block;
       margin: 1rem 0;
-      font-size: 1.2rem;
-      font-weight: bold;
+      font-size: 1.1rem;
       color: #003366;
+      font-weight: bold;
       text-decoration: none;
     }
-    .faq-links a:hover {
+    .faq-link::before {
+      content: "📌 ";
+      color: red;
+    }
+    .faq-link:hover {
       text-decoration: underline;
     }
     footer {
@@ -74,31 +83,31 @@
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Frequently Asked Questions</h1>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="how-it-works.html">How It Works</a>
-      <a href="faq.html">All FAQs</a>
-      <a href="pg-faq.html">PG FAQ</a>
-      <a href="creditbuilder-faq.html">Credit Builder FAQ</a>
-      <a href="funding-faq.html">Funding FAQ</a>
+      <a href="faq.html">FAQ</a>
+      <a href="legal.html">Legal</a>
+      <a href="partners.html">Partners</a>
       <a href="contact.html">Contact</a>
     </div>
+    <img src="logo.png" alt="800 Club Capital Logo" />
   </header>
 
+  <h1>Choose a FAQ Category</h1>
+
   <div class="container">
-    <h2>Choose a FAQ Category</h2>
-    <div class="faq-links">
-      <a href="pg-faq.html">📌 Personal Guarantor FAQ</a>
-      <a href="creditbuilder-faq.html">📌 Credit Builder / Authorized User FAQ</a>
-      <a href="funding-faq.html">📌 Business Funding FAQ</a>
-    </div>
+    <a href="pg-faq.html" class="faq-link">Personal Guarantor FAQ</a>
+    <a href="creditbuilder-faq.html" class="faq-link">Credit Builder / Authorized User FAQ</a>
+    <a href="funding-faq.html" class="faq-link">Business Funding FAQ</a>
   </div>
 
   <footer>
     <p>Still have questions? Email us at <a href="mailto:info@800clubcapital.com">info@800clubcapital.com</a></p>
     <p>&copy; 2025 800 Club Capital. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
